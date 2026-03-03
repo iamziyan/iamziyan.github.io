@@ -1,7 +1,7 @@
 --- 
 --- 
-@use "variables";
-@use "main";
+@import "variables";
+@import "main";
 
 .spin {
   display: inline-block;
