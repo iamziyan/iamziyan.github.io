@@ -1,0 +1,18 @@
+- title: "Sports Tournament Management System"
+  description: "A full-stack web application built using PHP and MySQL that manages tournaments, teams, match scheduling, and results with role-based authentication."
+  demo_url: "https://iamziyan.github.io/SportDeck/"
+  github_url: "https://github.com/iamziyan/SportDeck"
+  tags:
+    - PHP
+    - MySQL
+    - HTML
+    - CSS
+
+- title: "Portfolio Website"
+  description: "My personal portfolio website built using Jekyll and custom CSS, focused on clean design and performance."
+  demo_url: "https://iamziyan.github.io/"
+  github_url: "https://github.com/iamziyan/iamziyan.github.io"
+  tags:
+    - Jekyll
+    - HTML
+    - CSS

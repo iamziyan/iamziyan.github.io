@@ -1,0 +1,31 @@
+---
+layout: default
+title: Projects
+---
+<h1>Projects</h1>
+<p>Here are some of the web development and backend-focused projects I have built, including full-stack systems with
+    database integration and role-based functionality.</p>
+
+<div class="grid grid-2">
+    {% for project in site.data.projects %}
+    <div class="card">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+
+        {% if project.tags %}
+        <p class="fs-0-85rem text-nav-link mt-05rem">
+            Focus: {{ project.tags | join: ', ' }}
+        </p>
+        {% endif %}
+
+        <div class="mt-1rem">
+            {% if project.github_url %}
+            <a href="{{ project.github_url }}" target="_blank" rel="noopener" class="mr-1rem">GitHub</a>
+            {% endif %}
+            {% if project.demo_url %}
+            <a href="{{ project.demo_url }}" target="_blank" rel="noopener">Live Demo</a>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
