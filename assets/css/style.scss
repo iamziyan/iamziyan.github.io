@@ -22,3 +22,15 @@
 .dark .social-icon {
   filter: invert(1);
 }
+
+/* Center About page content */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main ul {
+  display: inline-block;
+  text-align: left;
+}
