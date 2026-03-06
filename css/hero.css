@@ -1,0 +1,244 @@
+/* ============================================================
+   hero.css — Hero Section
+   ============================================================ */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+}
+
+/* tsParticles canvas */
+#tsparticles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+/* Glassmorphism background layer */
+.hero-glass-layer {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 500px;
+    background: radial-gradient(ellipse at center,
+            rgba(59, 130, 246, 0.06) 0%,
+            rgba(6, 182, 212, 0.03) 40%,
+            transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Subtle dot-grid overlay */
+.hero-grid {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image:
+        radial-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+    background-size: 36px 36px;
+    pointer-events: none;
+    will-change: transform;
+}
+
+/* ---- Hero Content ---- */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+/* Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 14px;
+    border-radius: 100px;
+    background: rgba(59, 130, 246, 0.08);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    font-size: 0.78rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-cyan);
+    letter-spacing: 0.05em;
+    margin-bottom: 28px;
+}
+
+.badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent-cyan);
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Hero Title */
+.hero-title {
+    font-size: clamp(2.2rem, 5.5vw, 4rem);
+    color: var(--text-primary);
+    margin-bottom: 36px;
+    letter-spacing: -0.03em;
+}
+
+/* Terminal */
+.hero-terminal {
+    display: inline-block;
+    text-align: left;
+    background: var(--term-bg);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg), 0 0 40px rgba(59, 130, 246, 0.08);
+    min-width: 420px;
+    max-width: 600px;
+    margin-bottom: 36px;
+}
+
+.terminal-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.t-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.t-red {
+    background: #ff5f57;
+}
+
+.t-yellow {
+    background: #febc2e;
+}
+
+.t-green {
+    background: #28c840;
+}
+
+.t-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.35);
+    margin-left: 8px;
+}
+
+.terminal-body {
+    padding: 16px 20px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    min-height: 80px;
+}
+
+.terminal-line {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    white-space: nowrap;
+}
+
+.t-prompt {
+    color: var(--term-prompt);
+    font-weight: 600;
+    user-select: none;
+}
+
+.t-cmd {
+    color: var(--term-cmd);
+    font-weight: 500;
+}
+
+.terminal-output {
+    margin-top: 10px;
+    color: var(--term-output);
+    line-height: 1.7;
+    font-size: 0.83rem;
+}
+
+.terminal-output .out-line {
+    display: block;
+    opacity: 0;
+    animation: fade-in-line 0.3s ease forwards;
+}
+
+/* Blinking cursor */
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1em;
+    background: var(--accent-cyan);
+    margin-left: 1px;
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+    border-radius: 1px;
+}
+
+/* Hero sub-text */
+.hero-sub {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.hero-sub em {
+    color: var(--accent-cyan);
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Hero CTA */
+.hero-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.scroll-line {
+    width: 1.5px;
+    height: 48px;
+    background: linear-gradient(to bottom, var(--accent-blue), transparent);
+    margin: 0 auto;
+    animation: scroll-pulse 2s ease-in-out infinite;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+    .hero-terminal {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
