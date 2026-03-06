@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ziyanali Saiyed — BCA Student, Aspiring Fintech & Systems Engineer from Anand, Gujarat. Portfolio showcasing skills, projects and GitHub stats." />
+  <meta name="keywords" content="Ziyanali Saiyed, portfolio, BCA, fintech, developer, Gujarat, India" />
+  <meta property="og:title" content="Ziyanali Saiyed — Portfolio" />
+  <meta property="og:description" content="Aspiring Fintech & Systems Engineer. BCA Student from Anand, Gujarat." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iamziyan.github.io/" />
+  <title>Ziyanali Saiyed — Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">Ziyan</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#stats" class="nav-link">Stats</a></li>
+        <li><a href="#connect" class="nav-link">Connect</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme" title="Toggle Dark / Light mode">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <!-- Particle canvas injected by tsParticles -->
+    <div id="tsparticles" aria-hidden="true"></div>
+
+    <!-- Glassmorphism background layer -->
+    <div class="hero-glass-layer" aria-hidden="true"></div>
+
+    <!-- Subtle grid overlay -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content container">
+      <div class="hero-badge fade-in-up" style="--delay:0.1s">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span class="badge-text">Open to Opportunities</span>
+      </div>
+
+      <h1 class="hero-title fade-in-up" style="--delay:0.2s">
+        Hey, I'm <span class="accent-text">Ziyanali Saiyed</span>
+      </h1>
+
+      <div class="hero-terminal fade-in-up" style="--delay:0.4s" aria-label="Terminal animation">
+        <div class="terminal-bar" aria-hidden="true">
+          <span class="t-dot t-red"></span>
+          <span class="t-dot t-yellow"></span>
+          <span class="t-dot t-green"></span>
+          <span class="t-title">zsh — ~/portfolio</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="t-prompt" aria-hidden="true">ziyan@dev:~$&nbsp;</span>
+            <span id="typed-command" class="t-cmd" aria-live="polite"></span>
+          </div>
+          <div class="terminal-output" id="terminal-output" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <p class="hero-sub fade-in-up" style="--delay:0.6s">
+        Building reliable systems at the intersection of <em>technology</em> and <em>finance</em>.
+      </p>
+
+      <div class="hero-cta fade-in-up" style="--delay:0.8s">
+        <a href="#projects" class="btn btn-primary" id="hero-cta-btn">
+          <span>View My Work</span>
+          <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/iamziyan" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about" aria-label="About section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01. About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>BCA student</strong> from Anand, Gujarat, India — focused on building a career at the intersection
+            of <strong>IT systems</strong> and <strong>financial technology</strong>. I'm genuinely curious about how large-scale
+            systems work under the hood, and how financial products are engineered to be reliable, fast, and secure.
+          </p>
+          <p>
+            My background spans core programming concepts, database design, and systems thinking. I approach problems
+            analytically — understanding the domain before writing a single line of code. I believe good software
+            starts with clear thinking.
+          </p>
+          <p>
+            Outside of coursework, I spend time studying financial markets, reading about system architecture, and
+            working on personal projects that mimic real-world systems. I value clarity, correctness, and craft
+            over shortcuts.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Anand, Gujarat, India</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <span>BCA — Bachelor of Computer Applications</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+              <span>Target: Fintech &amp; IT Systems Roles</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-code-panel reveal" aria-hidden="true">
+          <div class="code-panel-bar">
+            <span class="cp-dot cp-red"></span>
+            <span class="cp-dot cp-yellow"></span>
+            <span class="cp-dot cp-green"></span>
+            <span class="cp-title">profile.json</span>
+          </div>
+          <pre class="code-panel-body" id="about-code-snippet"><code></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills" aria-label="Skills section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02. Skills</span>
+        <h2 class="section-title">What I Bring</h2>
+      </div>
+
+      <div class="skills-category reveal">
+        <h3 class="skills-cat-title">
+          <i class="fa-solid fa-brain" aria-hidden="true"></i> Core Competencies
+        </h3>
+        <div class="skills-grid" id="skills-soft">
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <span class="skill-name">Analytical Thinking</span>
+          </div>
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <span class="skill-name">System Thinking</span>
+          </div>
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+            <span class="skill-name">Problem Solving</span>
+          </div>
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon"><i class="fa-solid fa-landmark"></i></div>
+            <span class="skill-name">Financial Markets Awareness</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category reveal">
+        <h3 class="skills-cat-title">
+          <i class="fa-solid fa-code" aria-hidden="true"></i> Technical Skills
+        </h3>
+        <div class="skills-grid" id="skills-tech">
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon skill-icon--html"><i class="fa-brands fa-html5"></i></div>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon skill-icon--css"><i class="fa-brands fa-css3-alt"></i></div>
+            <span class="skill-name">CSS3</span>
+          </div>
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon skill-icon--js"><i class="fa-brands fa-js"></i></div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon skill-icon--sql"><i class="fa-solid fa-database"></i></div>
+            <span class="skill-name">SQL / DBMS</span>
+          </div>
+          <div class="skill-card tilt-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="false">
+            <div class="skill-icon skill-icon--console"><i class="fa-solid fa-terminal"></i></div>
+            <span class="skill-name">Console &amp; File Handling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects" aria-label="Projects section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">03. Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+
+      <div class="project-card tilt-card reveal" data-tilt data-tilt-max="5" data-tilt-speed="500" data-tilt-glare="false">
+        <div class="project-card-inner">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/iamziyan/sports-tournament-management-system" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Sports Tournament Management System on GitHub">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Sports Tournament Management System</h3>
+            <p class="project-desc">
+              A full-featured console application for managing sports tournaments — handles player registration,
+              team formation, fixture generation, match scorekeeping, and result tracking. Built with file-based
+              persistence to simulate a lightweight database layer without an external DBMS.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C / C++</span>
+              <span class="tag">File I/O</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Systems Design</span>
+              <span class="tag">Console App</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-meta">
+              <span class="meta-item">
+                <i class="fa-solid fa-circle" aria-hidden="true" style="color: var(--accent-cyan); font-size: 0.6rem;"></i>
+                Console Application
+              </span>
+              <span class="meta-item">
+                <i class="fa-solid fa-file" aria-hidden="true"></i>
+                File-based Persistence
+              </span>
+            </div>
+            <a href="https://github.com/iamziyan/sports-tournament-management-system" class="btn-project" target="_blank" rel="noopener noreferrer">
+              View on GitHub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GITHUB STATS ============ -->
+  <section class="section section-alt" id="stats" aria-label="GitHub Stats section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">04. GitHub Stats</span>
+        <h2 class="section-title">Activity &amp; Metrics</h2>
+      </div>
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=iamziyan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=06b6d4&text_color=e2e8f0&count_private=true"
+            alt="Ziyanali Saiyed's GitHub Stats"
+            class="stat-img"
+            loading="lazy"
+            width="495"
+            height="195"
+          />
+        </div>
+        <div class="stat-card">
+          <img
+            src="https://github-readme-streak-stats.herokuapp.com/?user=iamziyan&theme=tokyonight&hide_border=true&background=0d1117&ring=3b82f6&fire=facc15&currStreakLabel=06b6d4"
+            alt="Ziyanali Saiyed's GitHub Streak Stats"
+            class="stat-img"
+            loading="lazy"
+            width="495"
+            height="195"
+          />
+        </div>
+        <div class="stat-card">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamziyan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6&text_color=e2e8f0&langs_count=8"
+            alt="Ziyanali Saiyed's Top Languages"
+            class="stat-img"
+            loading="lazy"
+            width="495"
+            height="195"
+          />
+        </div>
+        <div class="stat-card">
+          <img
+            src="https://github-readme-activity-graph.vercel.app/graph?username=iamziyan&theme=react-dark&hide_border=true&bg_color=0d1117&color=3b82f6&line=06b6d4&point=facc15&area=true"
+            alt="Ziyanali Saiyed's GitHub Activity Graph"
+            class="stat-img stat-img--wide"
+            loading="lazy"
+            width="1000"
+            height="300"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONNECT ============ -->
+  <section class="section" id="connect" aria-label="Connect section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">05. Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <p class="connect-sub reveal">
+        Currently open to internships and entry-level roles in <strong>fintech</strong>, <strong>IT systems</strong>,
+        and <strong>backend development</strong>. Let's talk.
+      </p>
+      <div class="connect-cards reveal">
+        <a href="https://github.com/iamziyan" class="connect-card" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <div class="connect-icon">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </div>
+          <div class="connect-info">
+            <span class="connect-platform">GitHub</span>
+            <span class="connect-handle">@iamziyan</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square connect-external" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ziyanalisaiyed/" class="connect-card" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <div class="connect-icon connect-icon--linkedin">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </div>
+          <div class="connect-info">
+            <span class="connect-platform">LinkedIn</span>
+            <span class="connect-handle">Ziyanali Saiyed</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square connect-external" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/_iamziyan" class="connect-card" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) Profile">
+          <div class="connect-icon connect-icon--twitter">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="connect-info">
+            <span class="connect-platform">X / Twitter</span>
+            <span class="connect-handle">@_iamziyan</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square connect-external" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#home" class="nav-logo footer-logo" aria-label="Back to top">
+          <span class="logo-bracket">&lt;</span><span class="logo-name">Ziyan</span><span class="logo-bracket">/&gt;</span>
+        </a>
+      </div>
+      <div class="footer-center">
+        <p class="footer-copy">
+          &copy; 2025–2026 Ziyanali Saiyed &nbsp;•&nbsp; Building reliable systems step by step&nbsp;🚀
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="back-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <!-- tsParticles slim -->
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@3/tsparticles.engine.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3/tsparticles.slim.min.js"></script>
+  <!-- Vanilla Tilt -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+  <!-- App JS (order matters) -->
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/particles-config.js"></script>
+  <script src="js/typing-effect.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/tilt-init.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
