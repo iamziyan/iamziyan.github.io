@@ -255,9 +255,13 @@
     border-radius: 14px;
     overflow: hidden;
     max-width: 760px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     transform-style: preserve-3d;
+}
+
+.project-card:last-child {
+    margin-bottom: 0;
 }
 
 .project-card:hover {
