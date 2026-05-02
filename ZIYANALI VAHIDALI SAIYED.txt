@@ -1,0 +1,60 @@
+# Ziyanali Saiyed
+
+**BCA Student | Aspiring IT & FinTech Professional**  
+Gandhinagar, Gujarat | +91 9316825425 | ziyanalivsaiyed22104@gmail.com  
+[GitHub](https://github.com/iamziyan) | [Portfolio](https://iamziyan.github.io/) | [LinkedIn](https://www.linkedin.com/in/ziyanalisaiyed/)
+
+---
+
+### Education
+
+**Bachelor of Computer Applications (BCA)**  
+SEMCOM, Gujarat  
+Expected Graduation: 2027 | CGPA: X.XX/10
+
+---
+
+### Skills
+
+- **Programming**: PHP, JavaScript, SQL  
+- **Web Technologies**: HTML5, CSS3  
+- **Database**: MySQL  
+- **Tools & Others**: Git, GitHub, File Handling, Console Programming  
+- **Soft Skills**: Analytical Thinking, Problem Solving, System Understanding
+
+---
+
+### Projects
+
+**Nestify - Hostel Management System**  
+*Full-stack web application*  
+- Developed role-based access for Admin and Students using PHP & MySQL  
+- Implemented room allocation, fee management, and complaint tracking modules  
+- Focused on data integrity and user-friendly interface  
+→ [GitHub](https://github.com/iamziyan/Nestify)
+
+**SportDeck - Sports Tournament Management System**  
+*Console-based application*  
+- Built complete tournament management with players, teams, fixtures, and results  
+- Used structured file handling for data persistence  
+- Emphasized clean code structure and process reliability  
+→ [GitHub](https://github.com/iamziyan/SportDeck)
+
+---
+
+### Additional Highlights
+
+- Strong understanding of database design and normalization  
+- Interest in transaction workflows and financial technology applications  
+- Quick learner with focus on building practical and reliable systems
+
+---
+
+### Declaration
+
+I hereby declare that the above information is true to the best of my knowledge.
+
+---
+
+**Available for Internships & Full-time Roles**  
+Open to opportunities in **Software Development, Web Development, Backend, and FinTech**.

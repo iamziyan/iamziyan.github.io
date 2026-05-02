@@ -1,57 +1,12 @@
 /**
- * script.js — Shared JS for all pages
+ * script.js — Page-specific JS (particles, typing, skill bars, form)
+ * Header/footer/theme/hamburger are handled by components.js
  * Ziyanali Saiyed Portfolio
  */
 (function () {
   'use strict';
 
-  /* ────────────────────────
-     THEME
-  ──────────────────────── */
   const html = document.documentElement;
-  const themeBtn = document.getElementById('themeToggle');
-
-  function applyTheme(t) {
-    html.setAttribute('data-theme', t);
-    if (themeBtn) themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
-  }
-
-  applyTheme(localStorage.getItem('zs-theme') || 'dark');
-
-  themeBtn && themeBtn.addEventListener('click', () => {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('zs-theme', next);
-    applyTheme(next);
-  });
-
-  /* ────────────────────────
-     NAVBAR SCROLL RAISE
-  ──────────────────────── */
-  const navbar = document.querySelector('.navbar');
-  function checkScroll() {
-    navbar && navbar.classList.toggle('raised', window.scrollY > 10);
-  }
-  window.addEventListener('scroll', checkScroll, { passive: true });
-  checkScroll();
-
-  /* ────────────────────────
-     HAMBURGER MENU
-  ──────────────────────── */
-  const ham   = document.getElementById('hamburger');
-  const mobNav = document.getElementById('mobNav');
-
-  ham && ham.addEventListener('click', () => {
-    ham.classList.toggle('open');
-    mobNav && mobNav.classList.toggle('open');
-    ham.setAttribute('aria-expanded', mobNav.classList.contains('open'));
-  });
-
-  mobNav && mobNav.querySelectorAll('.mob-link').forEach(l => {
-    l.addEventListener('click', () => {
-      ham.classList.remove('open');
-      mobNav.classList.remove('open');
-    });
-  });
 
   /* ────────────────────────
      PARTICLE CANVAS (Home)
@@ -204,14 +159,5 @@
       }, 1500);
     });
   }
-
-  /* ────────────────────────
-     RESUME BUTTON
-  ──────────────────────── */
-  const resumeBtn = document.getElementById('resumeBtn');
-  resumeBtn && resumeBtn.addEventListener('click', e => {
-    e.preventDefault();
-    alert('Resume download coming soon!');
-  });
 
 })();
