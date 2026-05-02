@@ -243,4 +243,4 @@ strong{color:var(--text)}
 @media(max-width:480px){
   .hero-actions{flex-direction:column;align-items:center}
   .hero-stats{gap:1.2rem}
-}
+}\n@media print {\n  * {\n    -webkit-print-color-adjust: exact !important;\n    color-adjust: exact !important;\n    print-color-adjust: exact !important;\n  }\n  body {\n    background-color: var(--bg) !important;\n    color: var(--text) !important;\n  }\n  #header-placeholder, #footer-placeholder, .page-header {\n    display: none !important;\n  }\n  .resume-page {\n    padding: 0 !important;\n  }\n  .resume-card {\n    border: none !important;\n    box-shadow: none !important;\n  }\n}
