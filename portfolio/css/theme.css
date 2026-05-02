@@ -1,0 +1,46 @@
+/* portfolio/css/theme.css */
+:root {
+    /* Fonts */
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Default (Dark Mode - Professional FinTech look) */
+    --bg-main: #0a0e17; /* Deep dark blue */
+    --bg-secondary: #111827; /* Slightly lighter */
+    --bg-card: #1f2937;
+
+    --text-primary: #f3f4f6; /* Off-white */
+    --text-secondary: #9ca3af; /* Gray */
+
+    --accent-primary: #06b6d4; /* Cyan */
+    --accent-secondary: #3b82f6; /* Blue */
+    --accent-glow: rgba(6, 182, 212, 0.2);
+
+    --border-color: #374151;
+
+    /* Utility */
+    --transition-speed: 0.3s;
+    --border-radius: 8px;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-glow: 0 0 15px var(--accent-glow);
+}
+
+[data-theme="light"] {
+    --bg-main: #f8fafc; /* Very light slate */
+    --bg-secondary: #ffffff; /* White */
+    --bg-card: #ffffff;
+
+    --text-primary: #0f172a; /* Slate 900 */
+    --text-secondary: #475569; /* Slate 600 */
+
+    --accent-primary: #0284c7; /* Darker cyan/blue for better contrast in light mode */
+    --accent-secondary: #2563eb; /* Royal blue */
+    --accent-glow: rgba(2, 132, 199, 0.15);
+
+    --border-color: #e2e8f0;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

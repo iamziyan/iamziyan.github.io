@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ziyanali Saiyed</title>
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">Z.Saiyed</a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../skills/index.html">Skills</a></li>
+                    <li><a href="index.html" class="active">Projects</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path id="theme-icon-path" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Mobile Menu">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container fade-in">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="card-grid">
+
+                <!-- Project 1 -->
+                <div class="card project-card">
+                    <div style="background-color: var(--bg-secondary); height: 180px; border-radius: var(--border-radius); margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color);">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Nestify</h3>
+                    <p style="font-weight: 500; color: var(--text-primary); margin-bottom: 0.5rem;">Hostel Management System</p>
+                    <p>A comprehensive web-based application designed to streamline hostel operations. Features include room allocation, student record management, fee tracking, and administration dashboards.</p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%;" onclick="event.preventDefault(); alert('Demo link would go here.')">View Details</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card project-card">
+                    <div style="background-color: var(--bg-secondary); height: 180px; border-radius: var(--border-radius); margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color);">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">SportDeck</h3>
+                    <p style="font-weight: 500; color: var(--text-primary); margin-bottom: 0.5rem;">Sports Tournament Management System</p>
+                    <p>A console-based application to manage sports tournaments efficiently. It utilizes file handling concepts to persistently store team data, match schedules, and tournament results without requiring a database server.</p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">Console Programming</span>
+                        <span class="tech-tag">File Handling</span>
+                        <span class="tech-tag">Data Structures</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%;" onclick="event.preventDefault(); alert('Source code link would go here.')">View Source Code</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Ziyanali Saiyed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
