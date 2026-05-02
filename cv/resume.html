@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Resume</title>
+  <meta name="description" content="Resume of Ziyanali Saiyed — BCA Student and Aspiring IT & FinTech Professional." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('zs-theme') || 'dark');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/theme.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <style>
+    .resume-page {
+      padding: 70px 0 80px;
+    }
+    .resume-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .cv-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cv-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .cv-title {
+      font-size: 1.1rem;
+      color: var(--text);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+    }
+    .cv-contact a {
+      color: var(--blue);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .cv-contact a:hover {
+      color: var(--cyan);
+      text-decoration: underline;
+    }
+    .cv-section {
+      margin-bottom: 2.5rem;
+    }
+    .cv-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4rem;
+      color: var(--text);
+      border-bottom: 2px solid var(--border-b);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+    .cv-item {
+      margin-bottom: 1.5rem;
+    }
+    .cv-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.3rem;
+      flex-wrap: wrap;
+    }
+    .cv-item-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    .cv-item-subtitle {
+      font-weight: 500;
+      color: var(--blue);
+      font-size: 0.95rem;
+    }
+    .cv-item-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .cv-item-desc {
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .cv-list {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .cv-list li {
+      margin-bottom: 0.4rem;
+    }
+    .cv-skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .cv-skill-group {
+      background: var(--bg2);
+      padding: 1rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .cv-skill-title {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .cv-skill-items {
+      color: var(--text-sub);
+      font-size: 0.9rem;
+    }
+    
+    @media(max-width: 768px) {
+      .resume-card {
+        padding: 1.5rem;
+        border-radius: 12px;
+      }
+      .cv-item-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="resume-page page">
+    <div class="container">
+      <div class="page-header reveal">
+        <span class="eyebrow">Curriculum Vitae</span>
+        <h1 class="page-title">My Resume</h1>
+        <div class="mt-4" style="margin-top: 1.5rem;">
+            <a href="/ZIYANALI%20VAHIDALI%20SAIYED.txt" target="_blank" class="btn btn-primary" download>Download Raw TXT <span class="btn-icon">↓</span></a>
+        </div>
+      </div>
+      
+      <div class="resume-card reveal">
+        <header class="cv-header">
+          <h1 class="cv-name">Ziyanali Saiyed</h1>
+          <p class="cv-title">BCA Student | Aspiring IT & FinTech Professional</p>
+          <div class="cv-contact">
+            <span>📍 Gandhinagar, Gujarat</span>
+            <span>📞 +91 9316825425</span>
+            <span>✉️ <a href="mailto:ziyanalivsaiyed22104@gmail.com">ziyanalivsaiyed22104@gmail.com</a></span>
+          </div>
+          <div class="cv-contact" style="margin-top: 0.8rem;">
+            <span><a href="https://github.com/iamziyan" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+            <span><a href="https://iamziyan.github.io/" target="_blank" rel="noopener noreferrer">Portfolio</a></span>
+            <span><a href="https://www.linkedin.com/in/ziyanalisaiyed/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+          </div>
+        </header>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Education</h2>
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <span class="cv-item-title">Bachelor of Computer Applications (BCA)</span>
+              <span class="cv-item-date">Expected Graduation: 2027</span>
+            </div>
+            <div class="cv-item-subtitle" style="margin-bottom: 0.5rem;">SEMCOM, Gujarat</div>
+            <div class="cv-item-desc">CGPA: X.XX/10</div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Skills</h2>
+          <div class="cv-skills">
+            <div class="cv-skill-group">
+              <div class="cv-skill-title">Programming</div>
+              <div class="cv-skill-items">PHP, JavaScript, SQL</div>
+            </div>
+            <div class="cv-skill-group">
+              <div class="cv-skill-title">Web Technologies</div>
+              <div class="cv-skill-items">HTML5, CSS3</div>
+            </div>
+            <div class="cv-skill-group">
+              <div class="cv-skill-title">Database</div>
+              <div class="cv-skill-items">MySQL</div>
+            </div>
+            <div class="cv-skill-group">
+              <div class="cv-skill-title">Tools & Others</div>
+              <div class="cv-skill-items">Git, GitHub, File Handling, Console Programming</div>
+            </div>
+            <div class="cv-skill-group" style="grid-column: 1 / -1;">
+              <div class="cv-skill-title">Soft Skills</div>
+              <div class="cv-skill-items">Analytical Thinking, Problem Solving, System Understanding</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Projects</h2>
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <span class="cv-item-title">Nestify - Hostel Management System</span>
+              <span class="cv-item-date"><a href="https://github.com/iamziyan/Nestify" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></span>
+            </div>
+            <div class="cv-item-subtitle" style="margin-bottom: 0.8rem;">Full-stack web application</div>
+            <ul class="cv-list">
+              <li>Developed role-based access for Admin and Students using PHP & MySQL</li>
+              <li>Implemented room allocation, fee management, and complaint tracking modules</li>
+              <li>Focused on data integrity and user-friendly interface</li>
+            </ul>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <span class="cv-item-title">SportDeck - Sports Tournament Management System</span>
+              <span class="cv-item-date"><a href="https://github.com/iamziyan/SportDeck" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></span>
+            </div>
+            <div class="cv-item-subtitle" style="margin-bottom: 0.8rem;">Console-based application</div>
+            <ul class="cv-list">
+              <li>Built complete tournament management with players, teams, fixtures, and results</li>
+              <li>Used structured file handling for data persistence</li>
+              <li>Emphasized clean code structure and process reliability</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Additional Highlights</h2>
+          <ul class="cv-list">
+            <li>Strong understanding of database design and normalization</li>
+            <li>Interest in transaction workflows and financial technology applications</li>
+            <li>Quick learner with focus on building practical and reliable systems</li>
+          </ul>
+        </section>
+
+        <section class="cv-section" style="border-top: 1px solid var(--border); padding-top: 2rem; text-align: center;">
+          <h2 class="cv-item-title" style="margin-bottom: 0.5rem;">Available for Internships & Full-time Roles</h2>
+          <p class="cv-item-desc">Open to opportunities in <strong>Software Development, Web Development, Backend, and FinTech</strong>.</p>
+          <p class="cv-item-date" style="margin-top: 1.5rem; font-size: 0.8rem;">I hereby declare that the above information is true to the best of my knowledge.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="/js/components.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
