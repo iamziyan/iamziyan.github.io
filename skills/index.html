@@ -3,142 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <meta name="description" content="Technical skills of Ziyanali Saiyed — HTML, CSS, JavaScript, PHP, SQL, MySQL and Git." />
+  <title>Skills — Ziyanali Saiyed</title>
+  <meta name="description" content="Technical skills and technologies Ziyanali Saiyed is proficient in." />
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('zs-theme') || 'dark');</script>
+  
+  <!-- Inline theme initializer to prevent layout flashing -->
+  <script>
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('zs-theme') || 'dark');
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/theme.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
+  <!-- Once UI grid structure overlay -->
+  <div class="grid-overlay" aria-hidden="true"></div>
 
-<!-- Header injected by components.js -->
-<div id="header-placeholder"></div>
+  <!-- Header Placeholder -->
+  <header id="header-placeholder"></header>
 
-<!-- ── SKILLS ── -->
-<main>
-  <section class="skills-page page">
-    <div class="container">
-      <div class="page-header reveal">
-        <span class="eyebrow">Technical Skills</span>
-        <h1 class="page-title">My Toolkit</h1>
-        <p class="page-sub">Technologies I work with to bring ideas to life</p>
+  <!-- Main Content -->
+  <main class="container">
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills &amp; Technologies</h2>
+      <p>
+        These are the core programming languages, web technologies, databases, and developer tools that I use for my projects and academic work.
+      </p>
+      
+      <div class="skills-container">
+        <span class="pill pill-accent">PHP</span>
+        <span class="pill pill-accent">JavaScript</span>
+        <span class="pill pill-accent">SQL</span>
+        <span class="pill">HTML5</span>
+        <span class="pill">CSS3</span>
+        <span class="pill">ES6+</span>
+        <span class="pill pill-accent">MySQL</span>
+        <span class="pill">Git</span>
+        <span class="pill">GitHub</span>
+        <span class="pill">File Handling</span>
+        <span class="pill">Console Programming</span>
       </div>
+    </section>
+  </main>
 
-      <div class="skills-cats">
+  <!-- Footer Placeholder -->
+  <footer id="footer-placeholder"></footer>
 
-        <!-- Frontend -->
-        <div>
-          <div class="cat-label reveal">Frontend</div>
-          <div class="skills-row">
-            <div class="sk-card reveal">
-              <div class="sk-head">
-                <div class="sk-ico i-html">&#60;/&#62;</div>
-                <span class="sk-pct">90%</span>
-              </div>
-              <div class="sk-name">HTML5</div>
-              <div class="sk-desc">Semantic markup, accessibility, modern web standards</div>
-              <div class="bar-t"><div class="bar-f" data-w="90"></div></div>
-            </div>
-            <div class="sk-card reveal">
-              <div class="sk-head">
-                <div class="sk-ico i-css">✦</div>
-                <span class="sk-pct">85%</span>
-              </div>
-              <div class="sk-name">CSS3</div>
-              <div class="sk-desc">Responsive design, animations, Flexbox &amp; Grid</div>
-              <div class="bar-t"><div class="bar-f" data-w="85"></div></div>
-            </div>
-            <div class="sk-card reveal">
-              <div class="sk-head">
-                <div class="sk-ico i-js">JS</div>
-                <span class="sk-pct">75%</span>
-              </div>
-              <div class="sk-name">JavaScript</div>
-              <div class="sk-desc">DOM manipulation, ES6+, event handling</div>
-              <div class="bar-t"><div class="bar-f" data-w="75"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Backend & Database -->
-        <div>
-          <div class="cat-label reveal">Backend &amp; Database</div>
-          <div class="skills-row">
-            <div class="sk-card reveal">
-              <div class="sk-head">
-                <div class="sk-ico i-php">PHP</div>
-                <span class="sk-pct">80%</span>
-              </div>
-              <div class="sk-name">PHP</div>
-              <div class="sk-desc">Server-side scripting, form handling, sessions</div>
-              <div class="bar-t"><div class="bar-f" data-w="80"></div></div>
-            </div>
-            <div class="sk-card reveal">
-              <div class="sk-head">
-                <div class="sk-ico i-sql">SQL</div>
-                <span class="sk-pct">82%</span>
-              </div>
-              <div class="sk-name">SQL</div>
-              <div class="sk-desc">Complex queries, joins, stored procedures</div>
-              <div class="bar-t"><div class="bar-f" data-w="82"></div></div>
-            </div>
-            <div class="sk-card reveal">
-              <div class="sk-head">
-                <div class="sk-ico i-mysql">🗄</div>
-                <span class="sk-pct">80%</span>
-              </div>
-              <div class="sk-name">MySQL</div>
-              <div class="sk-desc">Database design, normalization, performance tuning</div>
-              <div class="bar-t"><div class="bar-f" data-w="80"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Version Control -->
-        <div>
-          <div class="cat-label reveal">Version Control</div>
-          <div class="skills-row">
-            <div class="sk-card reveal">
-              <div class="sk-head">
-                <div class="sk-ico i-git">⎇</div>
-                <span class="sk-pct">70%</span>
-              </div>
-              <div class="sk-name">Git</div>
-              <div class="sk-desc">Version control, branching strategies, collaboration</div>
-              <div class="bar-t"><div class="bar-f" data-w="70"></div></div>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /skills-cats -->
-
-      <!-- Also familiar with -->
-      <div class="also-box reveal">
-        <span class="also-label">Also familiar with</span>
-        <div class="tags">
-          <span class="tag">WAMP Server</span>
-          <span class="tag">phpMyAdmin</span>
-          <span class="tag">Responsive Design</span>
-          <span class="tag">REST APIs</span>
-          <span class="tag">OOP</span>
-          <span class="tag">Linux CLI</span>
-          <span class="tag">VS Code</span>
-          <span class="tag">FinTech Concepts</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-</main>
-
-<!-- Footer injected by components.js -->
-<div id="footer-placeholder"></div>
-
-<script src="/js/components.js"></script>
-<script src="/js/script.js"></script>
+  <!-- App Script -->
+  <script src="/js/app.js"></script>
 </body>
 </html>

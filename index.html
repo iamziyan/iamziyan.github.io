@@ -3,69 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <meta name="description" content="Ziyanali Saiyed — BCA student and aspiring IT & FinTech professional from Gujarat, India." />
+  <title>Ziyanali Saiyed — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ziyanali Saiyed — BCA Student (2027) and Aspiring IT & FinTech Professional." />
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('zs-theme') || 'dark');</script>
+  
+  <!-- Inline theme initializer to prevent layout flashing -->
+  <script>
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('zs-theme') || 'dark');
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/theme.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
+  <!-- Once UI grid structure overlay -->
+  <div class="grid-overlay" aria-hidden="true"></div>
 
-<!-- Header injected by components.js -->
-<div id="header-placeholder"></div>
+  <!-- Header Placeholder -->
+  <header id="header-placeholder"></header>
 
-<!-- ── HERO ── -->
-<main>
-  <section class="hero page" aria-label="Hero">
-    <canvas id="particleCanvas" aria-hidden="true"></canvas>
-    <div class="hero-inner">
-      <!-- Available badge -->
-      <div class="hero-badge reveal">
-        <span class="pulse-dot"></span>
-        <span class="eyebrow" style="margin:0">Available for opportunities</span>
-      </div>
-      <!-- Name -->
-      <p class="hero-greet reveal">Hello, I'm</p>
-      <h1 class="hero-name reveal">
-        Ziyanali<br>
-        <em>Saiyed.</em>
-      </h1>
-      <!-- Typing -->
-      <div class="hero-typing reveal">
-        <span style="color:var(--text-muted)">I craft</span>
-        <span class="typing-text" id="typingText"></span>
-        <span class="typing-cursor" aria-hidden="true">_</span>
-      </div>
-      <!-- Description -->
-      <p class="hero-desc reveal">
-        BCA student &amp; aspiring <strong>IT &amp; FinTech professional</strong> from Gujarat, India.
-        Building clean, purposeful software that makes a difference.
+  <!-- Main Content -->
+  <main class="container">
+    <section class="hero" aria-label="Introduction">
+      <span class="hero-subtitle">Hello, I'm</span>
+      <h1>Ziyanali Saiyed</h1>
+      <p class="hero-desc">
+        BCA Student (2027) &amp; Aspiring IT &amp; FinTech Professional. 
+        Focused on building secure transaction workflows, reliable systems, and efficient database designs.
       </p>
-      <!-- CTAs -->
-      <div class="hero-actions reveal">
-        <a href="/projects/" class="btn btn-primary">View My Work <span class="btn-icon">→</span></a>
-        <a href="/contact/"  class="btn btn-ghost">Get in Touch</a>
+      
+      <div class="btn-group">
+        <a href="/projects/" class="btn btn-primary">View Projects</a>
+        <a href="/assets/resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download CV</a>
       </div>
-      <!-- Stats -->
-      <div class="hero-stats reveal">
-        <div class="stat"><strong class="stat-n">2+</strong><span class="stat-l">Projects</span></div>
-        <span class="stat-div" aria-hidden="true"></span>
-        <div class="stat"><strong class="stat-n">7+</strong><span class="stat-l">Technologies</span></div>
-        <span class="stat-div" aria-hidden="true"></span>
-        <div class="stat"><strong class="stat-n">BCA</strong><span class="stat-l">Degree</span></div>
-      </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<!-- Footer injected by components.js -->
-<div id="footer-placeholder"></div>
+  <!-- Footer Placeholder -->
+  <footer id="footer-placeholder"></footer>
 
-<script src="/js/components.js"></script>
-<script src="/js/script.js"></script>
+  <!-- App Script -->
+  <script src="/js/app.js"></script>
 </body>
 </html>
